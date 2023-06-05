@@ -1,0 +1,24 @@
+@import '/src/styles/variables/common';
+
+.container {
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  font-family: $font-primary;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 12px;
+  letter-spacing: normal;
+  text-align: left;
+  background-color: $color-grey;
+  border: 0.5px solid $color-grey-border;
+  border-radius: 7.5px;
+
+  &Light {
+    background-color: $bg-light-darker;
+  }
+}

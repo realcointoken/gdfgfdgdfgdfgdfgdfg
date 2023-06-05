@@ -1,0 +1,171 @@
+@import '/src/styles/variables/common';
+@import '/src/styles/mixins/breakpoints';
+
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background-color: #050c1f;
+  padding: 15px 0;
+  box-sizing: border-box;
+  z-index: 999;
+  transition: $transition-all;
+}
+
+.launchAppBtn {
+  font-weight: 700;
+  background-color: #3574c9;
+  border: none;
+}
+
+.containerScrolled {
+  background: #050c1f;
+}
+
+.content {
+  display: flex;
+}
+
+.logo {
+  width: 150px !important;
+  // margin-left:-30px;
+  height: auto;
+  margin-top: -5%;
+  margin-bottom: -6%;
+  margin-left: -50px;
+}
+
+.logoLink {
+  padding: 0;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu {
+  list-style: none;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+}
+
+.menuItem {
+  margin: 0;
+  padding: 0;
+
+  &:not(:first-child) {
+    margin-left: 35px;
+  }
+}
+
+.menuLink {
+  font-family: $font-primary;
+  font-size: 15px;
+  line-height: 1;
+  font-weight: 600;
+  color: $color-dark;
+  text-decoration: none;
+  padding: 5px 0;
+
+  transition: $transition-all;
+
+  &:link {
+    color: $color-dark;
+    text-decoration: none;
+  }
+
+  &:visited {
+    color: $color-dark;
+  }
+
+  &:hover {
+    opacity: 0.85;
+  }
+
+  &:active {
+    color: $color-dark;
+  }
+}
+
+.menuLinkActive {
+  color: $color-light;
+}
+
+.button {
+  flex-shrink: 0;
+}
+
+.collapse {
+  img {
+    width: 20px;
+    object-fit: contain;
+  }
+}
+
+.wrongBtn {
+  background-color: #e94949;
+  border-radius: 20px;
+  border: 0;
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  cursor: pointer;
+
+  .wrongIcon {
+    width: 15px;
+    margin-right: 2px;
+  }
+
+  span {
+    color: $color-light;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .logo {
+    width: 70px;
+  }
+
+  .logoLink {
+    margin: 0;
+    padding: 0;
+  }
+
+  .dropdown {
+    .dropdownItem {
+      padding: 10px 0;
+
+      border-bottom: 1px solid #252c3e;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .logo {
+    width: 70px;
+  }
+
+  .logoLink {
+    margin: 0;
+    padding: 0;
+  }
+
+  .dropdown {
+    .dropdownItem {
+      padding: 10px 0;
+      border-bottom: 1px solid #252c3e;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1365px) {
+  .logo {
+    width: 45px;
+  }
+}

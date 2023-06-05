@@ -1,0 +1,21 @@
+.container {
+}
+
+.row {
+  grid-gap: 22px;
+  grid-template-columns: 1fr 258px;
+}
+
+.type {
+  display: block;
+}
+
+@media only screen and (max-width: 767px) {
+  .row {
+    grid-template-columns: 100%;
+  }
+
+  .type {
+    display: none;
+  }
+}

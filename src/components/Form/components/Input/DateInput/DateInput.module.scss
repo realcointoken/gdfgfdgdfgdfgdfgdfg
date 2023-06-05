@@ -1,0 +1,67 @@
+@import '/src/styles/mixins/breakpoints';
+@import '/src/styles/variables/common';
+
+.container {
+  border-radius: 7.5px;
+  //border: 0.5px solid $color-grey;
+  padding: 10px 15px;
+  display: block;
+  background-color: $color-grey;
+
+  :global {
+    .ant-picker-input > input {
+      font-family: $font-primary;
+      font-size: 15px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 12px;
+      letter-spacing: normal;
+      text-align: left;
+      color: white;
+      //color: $color-darkest;
+
+      &::placeholder {
+        color: $color-light;
+      }
+    }
+
+    .anticon.anticon-close-circle svg {
+      width: 15px;
+      height: 15px;
+
+      fill: #d6d6d6;
+    }
+  }
+}
+
+.dropdown {
+  :global {
+    .ant-picker-header,
+    .ant-picker-cell-inner,
+    .ant-picker-today-btn {
+      font-family: $font-primary;
+      //color: $color-darkest;
+    }
+
+    .ant-picker-header-view button:hover {
+      color: $color-green;
+    }
+
+    .ant-picker-today-btn {
+      color: $color-green;
+
+      &:hover {
+        opacity: 0.85;
+      }
+    }
+
+    .ant-picker-cell-selected .ant-picker-cell-inner {
+      background-color: $color-green;
+    }
+
+    .ant-picker-cell-today .ant-picker-cell-inner:before {
+      border-color: $color-green;
+    }
+  }
+}

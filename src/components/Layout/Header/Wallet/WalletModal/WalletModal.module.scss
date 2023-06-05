@@ -1,0 +1,176 @@
+@import "/src/styles/variables/common";
+@import "/src/styles/mixins/breakpoints";
+
+.wrapper {
+  padding-top: 43px;
+  padding-bottom: 43px;
+}
+
+.heading {
+  margin: 0;
+
+  font-family: $font-primary;
+  font-size: 25px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.72;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-darkest;
+}
+
+.data {
+  border: 0;
+  padding: 15px;
+  border-radius: 7.5px;
+  margin: 0 0 30px 0;
+  background: $bg-medium-dark;
+}
+
+.label {
+  font-family: $font-secondary;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-darkest;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dataButton {
+  font-size: 11px;
+  padding: 4px 10px !important;
+  min-height: 0;
+  color: #adafae !important;
+  border-color: #adafae !important;
+  border-radius: 5px;
+}
+
+.address {
+  display: flex;
+  align-items: center;
+
+  font-family: $font-secondary;
+  font-size: 18px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-darkest;
+
+  margin-top: 12px;
+}
+
+.icon {
+  flex-shrink: 0;
+  width: 21px;
+  height: 21px;
+  margin-right: 9px;
+}
+
+.transaction {
+  margin-top: 22px;
+}
+
+.transactionHead {
+  font-family: $font-primary;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-darkest;
+  margin: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.clearButton {
+  font-size: 13px;
+  color: #ababab;
+  background: none;
+}
+
+.transactionList {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0 0;
+}
+
+.transactionItem {
+  font-family: $font-secondary;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-darkest;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  cursor: pointer;
+
+  &:not(:first-child) {
+    margin-top: 12px;
+  }
+}
+
+.checkIcon {
+  width: 17px;
+}
+
+.dataActions {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.dataAction {
+  font-size: 15px;
+  color: #adafae;
+  background: transparent;
+
+  &:not(:first-child) {
+    margin-left: 40px;
+  }
+}
+.ant-modal-content {
+  border-radius: 15px;
+  background: $color-green;
+  padding: 0;
+  overflow: hidden;
+}
+
+.container {
+  .head {
+    height: 0 !important;
+  }
+}
+
+.walletFooter {
+  text-align: right;
+
+  button {
+    border: 2px solid #ffffff;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+}

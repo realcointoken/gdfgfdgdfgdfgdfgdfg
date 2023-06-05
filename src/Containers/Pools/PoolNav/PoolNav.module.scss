@@ -1,0 +1,98 @@
+@import "/src/styles/variables/common";
+@import "/src/styles/mixins/breakpoints";
+@import "/src/styles/animations";
+
+.container {
+  display: flex;
+  justify-content: center;
+
+  @include breakpoint("sm-max") {
+    overflow-x: auto;
+  }
+
+  @media screen and (max-width: 570px) {
+    display: block;
+  }
+}
+
+.wrapper {
+  display: inline-block;
+}
+
+.items {
+  margin: 0;
+  padding: 4.5px;
+  display: flex;
+  list-style: none;
+  border-radius: 29.5px;
+  background: $bg-medium;
+}
+
+.item {
+  width: auto;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: $font-primary;
+  font-size: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: center;
+  color: $color-light;
+  text-transform: capitalize;
+  white-space: nowrap;
+
+  height: 50px;
+  min-width: 100px;
+  background: transparent;
+  padding: 0 25px;
+  border: none;
+  cursor: pointer;
+  border-radius: 25px;
+
+  opacity: 0.5;
+
+  transition: $transition-all;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    opacity: 0.85;
+  }
+
+  .itemSelected & {
+    opacity: 1;
+    background: #343D56;
+
+    &:hover {
+      opacity: 0.85;
+      text-shadow: none;
+    }
+  }
+}
+
+.name {
+  margin: 1.5px 0 0.5px 10px;
+
+  .containerLoading & {
+    height: 20px;
+    width: 90px;
+    background: #343D56;
+    border-radius: 25px;
+
+    animation: $opacity-pulse;
+  }
+}
+
+.icon {
+  height: 14px;
+}

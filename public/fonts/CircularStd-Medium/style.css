@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'Circular Std';
+  src: local('Circular Std Medium'), local('Circular-Std-Medium'),
+    url('Aquire-BW0ox.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}

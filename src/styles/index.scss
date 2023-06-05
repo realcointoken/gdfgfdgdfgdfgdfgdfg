@@ -1,0 +1,60 @@
+@import 'variables/common';
+@import 'variables/breakpoints';
+@import 'mixins/breakpoints';
+
+@import 'common';
+@import 'content';
+@import 'transitions';
+@import 'animations';
+@import 'antOverride';
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+.custom-tabs .nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: #252c3e;
+}
+
+.custom-tabs .nav-link:focus,
+.nav-link:hover,
+.custom-tabs .a:focus,
+.a:active {
+  color: #ffffff !important;
+}
+
+.swap-input.form-control:focus {
+  box-shadow: none !important;
+}
+
+.swap-input.form-control {
+  height: 31px !important;
+  color: white;
+}
+
+.modal-dialog .modal-content {
+  background-color: #252c3e !important;
+  border-radius: 30px;
+}
+
+.list-group-item.currency-list {
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+.from-amount,
+.from-amount:focus {
+  border-radius: 7.5px !important;
+  border: 0.5px solid #1d243b !important;
+  padding: 0 15px !important;
+  height: 45px;
+  display: flex !important;
+  align-items: center !important;
+  background-color: #0f1528 !important;
+  box-shadow: none;
+  color: #ffffff;
+}
+
+.noHoverInputBorder .ant-input-affix-wrapper-disabled:hover {
+border-color: unset !important;
+
+}

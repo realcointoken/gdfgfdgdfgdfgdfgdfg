@@ -1,0 +1,45 @@
+@import '/src/styles/mixins/breakpoints';
+@import '/src/styles/variables/common';
+
+.container {
+}
+
+.labelWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.label {
+  font-family: $font-primary;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-darkest;
+  //color: $color-darkest;
+
+  margin-bottom: 10px;
+}
+
+.hint {
+  font-family: $font-primary;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  text-align: left;
+  color: #adafae;
+  margin-top: 5px;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

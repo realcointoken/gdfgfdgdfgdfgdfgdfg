@@ -1,0 +1,75 @@
+@import "/src/styles/mixins/breakpoints";
+@import "/src/styles/variables/common";
+
+.container {
+  border-radius: 7.5px;
+  border: 0.5px solid $color-grey-border;
+  //border: 0.5px solid $color-grey;
+  padding: 0 15px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  background-color: $color-grey;
+
+  &:-webkit-autofill,
+  &:-webkit-autofill:hover,
+  &:-webkit-autofill:focus,
+  &:-webkit-autofill:active {
+    -webkit-box-shadow: inset 0 0 0 50px $color-grey;
+    color: $color-medium !important;
+    -webkit-text-fill-color: $color-medium !important;
+  }
+
+  :global {
+    .ant-input {
+      font-family: $font-primary;
+      font-size: 15px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 12px;
+      letter-spacing: normal;
+      text-align: left;
+      color: $color-darkest;
+      background-color: $color-grey;
+      //color: $color-darkest;
+
+      &::placeholder {
+        color: $color-thin-light;
+      }
+
+      &:-webkit-autofill,
+      &:-webkit-autofill:hover,
+      &:-webkit-autofill:focus,
+      &:-webkit-autofill:active {
+        -webkit-box-shadow: inset 0 0 0 50px $color-grey;
+        color: $color-medium !important;
+        -webkit-text-fill-color: $color-medium !important;
+      }
+    }
+  }
+}
+
+.containerIcon {
+  padding: 0 15px 0 21.5px;
+
+  :global {
+    .ant-input {
+      margin-left: 14.5px;
+    }
+  }
+}
+
+.containerLight {
+  background-color: $bg-light-darker;
+  :global {
+    .ant-input {
+      background-color: $bg-light-darker;
+    }
+  }
+}
+
+.prefix {
+  max-width: 16.5px;
+  max-height: 16.5px;
+}

@@ -1,0 +1,44 @@
+@import "/src/styles/variables/common";
+@import "/src/styles/mixins/breakpoints";
+
+
+.dot {
+  position: relative;
+  left: -4px;
+  letter-spacing: -10px;
+
+}
+
+.container {
+  position: relative;
+}
+
+.buttonRight {
+  margin-left: 24px;
+}
+
+.cta {
+  position: relative;
+}
+
+.x {
+  width: 205px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -44px;
+  z-index: -1;
+}
+
+.section1 {
+  padding-top: 90px;
+
+}
+
+.section2 {
+  margin-top: 86px;
+}
+
+.section3 {
+  margin-top: 149.5px;
+}

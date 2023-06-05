@@ -1,0 +1,250 @@
+@import '/src/styles/variables/common';
+@import '/src/styles/mixins/breakpoints';
+@import '/src/styles/animations';
+
+.container {
+  border-radius: 15px;
+  background: $bg-medium;
+  overflow: hidden;
+  box-shadow: 0px 9px 45px 0 rgba(0, 0, 0, 0.05);
+}
+
+.banner {
+  width: 100%;
+  background: $bg-light no-repeat center / cover;
+
+  .loading & {
+    animation: $opacity-pulse;
+  }
+}
+
+.content {
+  padding: 28px 38px 31px;
+
+  @include breakpoint('sm-max') {
+    padding: 20px 15px 30px;
+  }
+}
+
+.heading {
+  font-family: $font-primary;
+  font-size: 18px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-light;
+
+  margin: 0;
+
+  .loading & {
+    color: transparent;
+    background: $bg-light;
+    width: 150px;
+    border-radius: 10px;
+    animation: $opacity-pulse;
+  }
+
+  @include breakpoint('xl-min') {
+    font-size: 22px;
+  }
+}
+
+.separator {
+  height: 1px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.05);
+
+  margin: 19px 0;
+}
+
+.text {
+  font-family: $font-primary;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.83;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-medium;
+
+  margin: 10px 0 0;
+
+  @include breakpoint('xl-min') {
+    font-size: 15px;
+  }
+
+  .loading & {
+    background-color: $bg-light;
+    width: 100%;
+    height: 70px;
+    border-radius: 10px;
+    animation: $opacity-pulse;
+  }
+}
+
+.sale {
+  font-family: $font-primary;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.83;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-medium;
+
+  margin-top: 10px;
+
+  display: flex;
+  align-items: center;
+
+  @include breakpoint('xl-min') {
+    font-size: 15px;
+  }
+
+  .loading & {
+    display: none;
+  }
+}
+
+.dot {
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #37b685;
+  margin: 0 6px 2px 0;
+
+  .loading & {
+    display: none;
+  }
+}
+
+.grid {
+  margin-top: 25px;
+
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+  @include breakpoint('sm-max') {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cellHeading {
+  font-family: $font-primary;
+  font-size: 12px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-light;
+
+  @include breakpoint('xl-min') {
+    font-size: 17px;
+  }
+
+  .loading & {
+    background: $bg-light;
+    color: transparent;
+    border-radius: 10px;
+    animation: $opacity-pulse;
+    width: 185px;
+  }
+}
+
+.dataList {
+  list-style: none;
+  margin: 12px 0 0;
+  padding: 0;
+}
+
+.dataListItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  min-height: 40px;
+  border-top: 1px solid #252b43;
+
+  &:last-child {
+    border-bottom: 1px solid #252b43;
+  }
+}
+
+.dataLabel,
+.dataValue {
+  font-family: $font-primary;
+  font-size: 11px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  text-overflow: ellipsis;
+
+  @include breakpoint('xl-min') {
+    font-size: 14px;
+  }
+
+  .loading & {
+    background: $bg-light;
+    color: transparent;
+    border-radius: 10px;
+    animation: $opacity-pulse;
+    width: 50px;
+    height: 10px;
+  }
+}
+
+.dataLabel {
+  color: $color-medium;
+  font-weight: normal;
+  min-width: 105px;
+}
+
+.dataValue {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  // max-width: 60%;
+
+  color: $color-light;
+  font-weight: 500;
+  text-align: right;
+}
+
+.copy {
+  margin-left: 5px;
+}
+
+.detailsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 24px;
+
+  &Item {
+    width: 33.3%;
+
+    &:nth-child(2) {
+      text-align: center;
+    }
+
+    &:last-child {
+      text-align: right;
+    }
+  }
+
+  strong {
+    line-height: 1;
+    font-size: 20px;
+  }
+}

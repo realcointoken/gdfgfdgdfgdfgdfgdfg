@@ -1,0 +1,10 @@
+@import "/src/styles/mixins/breakpoints";
+@import "/src/styles/variables/common";
+
+.back {
+  font-size: 15px;
+  font-weight: 500;
+  color: $color-blue
+
+  //&:hover {}
+}

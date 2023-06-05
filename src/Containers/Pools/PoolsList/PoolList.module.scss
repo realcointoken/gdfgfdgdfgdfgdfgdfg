@@ -1,0 +1,55 @@
+@import "/src/styles/variables/common";
+@import "/src/styles/mixins/breakpoints";
+@import "/src/styles/animations";
+
+.container {
+
+}
+
+.title {
+  font-family: $font-primary;
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-light;
+  margin: 0 0 20px;
+
+  .containerLoading & {
+    background: $bg-medium;
+    color: transparent;
+    height: 40px;
+    margin: 10px 0 30px;
+    width: 250px;
+    border-radius: 15.5px;
+
+    animation: $opacity-pulse;
+  }
+}
+
+.items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 356px));
+  grid-gap: 40.5px 25.5px;
+
+  @include breakpoint("md-max") {
+    grid-template-columns: 48% 48%;
+  }
+
+  @media only screen and (min-width: 1024px) and (max-width: 1365px) {
+    grid-template-columns: 31% 32% 31%;
+  }
+
+  @include breakpoint("sm-max") {
+    grid-template-columns: minmax(0px, 400px);
+    justify-content: center;
+  }
+}
+

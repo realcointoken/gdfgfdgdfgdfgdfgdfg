@@ -1,0 +1,53 @@
+@import '/src/styles/variables/common';
+@import '/src/styles/mixins/breakpoints';
+.heading {
+  display: block;
+  font-family: $font-secondary;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: -0.88px;
+  text-align: center;
+  color: $color-light;
+  margin-bottom: 10px;
+}
+.form {
+  width: 40%;
+
+  @media only screen and (min-width: 0px) and (max-device-width: 576px) {
+    width: 100% !important;
+  }
+  @media only screen and (min-width: 576px) and (max-device-width: 992px) {
+    width: 80%;
+  }
+  @media only screen and (min-device-width: 992px) and (max-device-width: 1200px) {
+    width: 70% !important;
+  }
+
+  padding: 30px;
+  margin: auto;
+
+  margin: 10px auto;
+  background-image: linear-gradient(to top, #101527, #060d20);
+  border-radius: 20px;
+}
+.btnContainer {
+  margin: auto;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.registerLink {
+  width: 100%;
+  float: right;
+  text-align: right;
+  margin-top: 10px;
+}
+.removeBorderRadius span input {
+  border-radius: 0 !important;
+}
+
+.btnSubmit {
+  font-weight: 700;
+}

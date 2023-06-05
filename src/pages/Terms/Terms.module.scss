@@ -1,0 +1,74 @@
+@import '/src/styles/variables/common';
+@import '/src/styles/mixins/breakpoints';
+
+.container {
+  position: relative;
+}
+
+.section1 {
+  padding: 110px 0;
+  section h1 {
+    word-spacing: 3px;
+  }
+}
+
+.section2 {
+  padding: 50px 0;
+
+  .separately {
+    margin-bottom: 20px;
+
+    .list {
+      padding-left: 20px;
+
+      li {
+        font-family: $font-primary;
+        font-size: 15px;
+        font-weight: normal;
+        line-height: 2;
+        text-align: left;
+        color: $color-light;
+      }
+    }
+  }
+}
+
+.textNormal {
+  font-family: $font-primary;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 2;
+  text-align: left;
+  color: $color-light;
+}
+
+.textBold {
+  font-family: $font-primary;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.textPadding {
+  font-family: $font-primary;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 2;
+  text-align: left;
+  color: $color-light;
+  padding-left: 20px;
+  margin-bottom: 0;
+}
+
+.cta {
+  position: relative;
+}
+
+.x {
+  width: 205px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -44px;
+  z-index: -1;
+}

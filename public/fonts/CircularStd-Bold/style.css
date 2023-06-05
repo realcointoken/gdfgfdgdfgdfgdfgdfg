@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'Circular Std';
+  src: local('Circular Std Bold'), local('Circular-Std-Bold'),
+    url('AquireBold-8Ma60.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}

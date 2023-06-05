@@ -1,0 +1,166 @@
+@import "/src/styles/variables/common";
+@import "/src/styles/mixins/breakpoints";
+@import "/src/styles/animations";
+
+.container {
+  padding-top: 10px;
+}
+
+.top {
+  font-family: $font-primary;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-light;
+
+  .loading & {
+    color: transparent;
+    background: $bg-light;
+    border-radius: 10px;
+    width: 150px;
+    animation: $opacity-pulse;
+  }
+}
+
+.heading {
+  font-family: $font-primary;
+  font-size: 18px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-light;
+  margin: 0;
+}
+
+.heading_name_token {
+  margin: 28px 0px;
+}
+
+.value {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.progress {
+  margin-top: 14px;
+}
+
+.stats {
+  padding: 0;
+}
+
+.statsItem {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  list-style: none;
+  padding: 0;
+  margin: 15px 0 0;
+}
+
+.statsValue {
+  font-family: $font-primary;
+  font-size: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: right;
+  color: $color-light;
+
+  .loading & {
+    color: transparent;
+    background: $bg-light;
+    border-radius: 10px;
+    animation: $opacity-pulse;
+    height: 15px;
+    width: 80px;
+  }
+}
+
+.statsLabel {
+  font-family: $font-primary;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-medium;
+  margin-top: 9px;
+
+  .loading & {
+    color: transparent;
+    background: $bg-light;
+    border-radius: 10px;
+    max-width: 80px;
+    height: 12px;
+    animation: $opacity-pulse;
+  }
+}
+
+.status {
+  margin-top: 27px;
+}
+
+.button {
+  width: 100%;
+  margin-top: 21px;
+
+  .loading & {
+    color: transparent;
+    background: $bg-light;
+    animation: $opacity-pulse;
+  }
+}
+
+.launch_icon {
+  width: 34px;
+  height: 34px;
+  margin-right: 8px;
+  flex-shrink: 0;
+}
+
+.allocations {
+  margin-top: 17px;
+}
+
+.label {
+  font-family: $font-primary;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.83;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-medium;
+
+  margin: 28px 0 0;
+}
+
+.image {
+  width: 34px;
+  height: 34px;
+  margin-right: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background: $bg-white no-repeat center / cover;
+  float: left;
+  .loading & {
+    animation: $opacity-pulse;
+  }
+
+  @include breakpoint("xl-min") {
+    width: 34px;
+    height: 34px;
+  }
+}

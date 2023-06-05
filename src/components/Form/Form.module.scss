@@ -1,0 +1,24 @@
+
+$row-margin-top: 12px;
+
+.container {
+
+}
+
+.field {
+  &:not(:first-child) {
+    margin-top: $row-margin-top;
+  }
+
+  .fieldGroup & {
+    &:not(:first-child) {
+      margin-top: 0;
+    }
+  }
+}
+
+.fieldGroup {
+  &:not(:first-child) {
+    margin-top: $row-margin-top;
+  }
+}

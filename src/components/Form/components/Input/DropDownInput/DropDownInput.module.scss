@@ -1,0 +1,119 @@
+@import "/src/styles/mixins/breakpoints";
+@import "/src/styles/variables/common";
+
+@mixin font {
+  font-family: $font-primary;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-thin-light;
+}
+
+.container {
+  display: block;
+
+  &:global.ant-select > {
+    .ant-select-selector {
+      @include font;
+
+      background: $bg-light-darker;
+      height: 45px;
+      padding: 0 19px 0 21px ;
+      border-radius: 7.5px;
+      border: none;
+      //border: 0.5px solid $color-grey;
+
+      .ant-select-selection-item {
+        display: flex;
+        align-items: center;
+      }
+
+      .ant-select-selection-item, .ant-select-selection-placeholder {
+      }
+    }
+
+    .ant-select-arrow {
+      height: auto;
+      right: 14px;
+      width: 8px;
+      top: 56%;
+
+      img {
+        width: 100%;
+        display: block;
+
+      }
+    }
+  }
+}
+
+.option {
+  display: flex;
+  align-items: center;
+
+  min-height: 0;
+
+  :global {
+    .ant-select-item-option-content {
+      display: flex;
+      align-items: center;
+
+      padding: 14px 21px;
+    }
+  }
+}
+
+.iconContainer {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 18px;
+  height: 100%;
+  margin-right: 10px;
+}
+
+.icon {
+  max-width: 18px;
+  max-height: 17.5px;
+}
+
+.iconDropdown {
+  &:global.ant-select > {
+    .ant-select-arrow {
+        width: 12px;
+        right: 16px;
+    }
+  }
+}
+
+.dropdown {
+  padding: 0;
+  border-radius: 7.5px;
+  margin: 5px;
+  background: $bg-light-darker;
+
+  :global {
+    .ant-select-item {
+      @include font;
+      padding: 0;
+    }
+
+    .ant-select-item-option-content {
+      padding: 14px 15px;
+      overflow: visible;
+    }
+
+    .ant-select-item-option-active:not(.ant-select-item-option-selected) {
+      background: rgba($color-medium, 0.1);
+    }
+
+    .ant-select-item-option-selected {
+      background: rgba($color-light, 0.1);
+    }
+  }
+}

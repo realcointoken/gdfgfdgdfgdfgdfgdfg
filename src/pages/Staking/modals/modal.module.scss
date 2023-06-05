@@ -1,0 +1,182 @@
+.heading {
+  font-style: normal;
+  font-size: 18px;
+  line-height: 24px;
+  /* identical to box height */
+
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+.ustddiv {
+  background: #3a435a;
+  border-radius: 29px;
+  width: fit-content;
+  padding: 4px 26px;
+  margin: 0 auto;
+}
+
+.ustdtext {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height */
+
+  text-transform: uppercase;
+  padding-left: 16px;
+
+  color: #ffffff;
+}
+
+.flexdiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lefttext {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #ffffff;
+}
+
+.righttext {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.vlaueleft {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+
+  color: #ffffff;
+}
+.valueright {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+.bottomtext {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.currencyequation {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  margin-top: 18px;
+  text-align: right;
+  color: #ffffff;
+}
+
+.bottombtn {
+  width: 141px;
+  height: 48px;
+  border-radius: 71px;
+  padding: 14.5px 35px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  background: #0079fc;
+  /* identical to box height */
+  margin-left: 8px;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+
+.warning {
+  font-family: Montserrat !important;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 203.69%;
+  /* identical to box height, or 29px */
+  color: #ea4242;
+}
+
+.transactionbtn {
+  width: 141px;
+  height: 48px;
+  border-radius: 71px;
+  padding: 14.5px 35px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  background: #0079fc;
+  /* identical to box height */
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.confirmtext {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 203.69%;
+  /* identical to box height, or 29px */
+
+  color: #05dc5f;
+}
+
+.stakedtext {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+.purchaseInput {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 20px;
+}
+.purchaseInput:focus {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.btnPurchase {
+  background: #0079fc;
+  border-radius: 27px;
+  font-family: Montserrat;
+  font-style: normal;
+
+  font-size: 16px;
+  line-height: 19px;
+  padding: 15px 33px;
+  color: #ffffff;
+  border: none;
+}

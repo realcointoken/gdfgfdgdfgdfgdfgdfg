@@ -1,0 +1,151 @@
+@import '/src/styles/variables/common';
+@import '/src/styles/mixins/breakpoints';
+
+.main {
+  width: 40%;
+  padding: 30px;
+  margin: auto;
+  margin: 10px auto;
+ background-color:#050d1f87;
+  border-radius: 20px;
+    margin-top:30px;
+
+}
+
+.innerDiv {
+  background-color: #343d56 !important;
+  padding: 10px !important;
+  border-radius: 10px !important;
+}
+
+.popModelSize {
+  max-width: 400px !important;
+}
+
+.popModelInput {
+  border-radius: 15px;
+  background-color: #0f1528 !important;
+  border-color: #0f1528 !important;
+  color: white !important;
+}
+
+///////@at-root
+.heading {
+  display: block;
+  font-family: $font-secondary;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: -0.88px;
+  text-align: center;
+  color: $color-light;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+.form {
+  width: 50%;
+  padding: 30px;
+  margin: auto;
+  margin: 10px auto;
+ background-color:#050d1f87;
+  border-radius: 20px;
+}
+.form_small {
+  width: 80%;
+  padding: 30px;
+  margin: 10px auto;
+ background-color:#050d1f87;
+  border-radius: 20px;
+}
+.btnContainer {
+  margin: auto;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.Sidebar {
+  height: 550px;
+  width: 250px;
+  background-color: white;
+}
+.swapMain {
+  display: flex;
+}
+
+.from {
+  height: 100px;
+  background-color: #343d56;
+  border-radius: 11px;
+  margin-top: 21px;
+  padding: 12px;
+}
+
+.form-control:focus {
+  box-shadow: unset !important;
+}
+
+.swapBtn {
+  border-radius: 10px;
+  width: 100% !important;
+}
+
+span {
+  margin-left: 0px !important;
+}
+
+.exchangeInnerForm {
+  background-color: #343d56 !important;
+  padding: 10px !important;
+  border-radius: 10px !important;
+}
+.exchangeInnerInput:hover {
+  box-shadow: none !important;
+}
+
+.exchangeInnerInput {
+  background-color: #0f1528 !important;
+  border-radius: 11px !important;
+}
+
+.currencyDropdown:focus {
+  box-shadow: none;
+}
+
+.currencyDropdown:hover {
+  background-color: #384469 !important;
+  color: white !important;
+}
+
+.currencyDropdown {
+  border-radius: 11px;
+  color: white;
+  font-size: 1.125rem !important;
+}
+
+.popModelSize {
+  max-width: 400px !important;
+}
+.popModelInput {
+  border-radius: 15px;
+  background-color: #0f1528 !important;
+  border-color: #0f1528 !important;
+  color: white !important;
+}
+
+.popModelInput:focus {
+  box-shadow: none !important;
+}
+
+.whiteLableListSelect {
+  overflow: hidden;
+  font-size: 12px;
+}
+
+.selectLabel {
+  margin-top: -9px !important;
+}
+.buttonDisable {
+  background-color: #343d56;
+  color: grey;
+}

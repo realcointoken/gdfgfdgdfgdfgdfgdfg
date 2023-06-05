@@ -1,0 +1,45 @@
+$font-primary: Inter, sans-serif;
+$font-secondary: 'NeueHaasDisplay-Bold', sans-serif;
+
+$bg-dark: #000000;
+$bg-medium-dark: #282e46;
+$bg-darkest: #181c2e;
+$bg-medium: #171c2f;
+$bg-light-darker: #343d56;
+$bg-light: #343d56;
+$bg-white: #ffffff;
+
+$color-border: #252c3e;
+
+$color-light: #ffffff;
+$color-light-darker: #343d56;
+$color-thin-light: #60667a;
+$color-medium: #8e94aa;
+$color-dark: #222222;
+$color-green: #37b786;
+$color-blue: #017ff3;
+$color-light-gray: #b3b5ba;
+$color-red: #e94949;
+$color-yellow: #fae958;
+$color-darkest: white;
+$color-grey: #0f1528;
+$color-grey-border: #1d243b;
+$color-blue-border: #0084fc;
+
+// transition
+$transition-all: all 0.15s ease-in;
+$transition-color: color 0.15s ease-in;
+$transition-opacity: opacity 0.15s ease-in;
+
+.avatar-uploader .ant-upload.ant-upload-select-picture-card {
+  background-color: transparent;
+  border: 0;
+}
+
+.ant-upload-picture-card-wrapper {
+  text-align: center;
+}
+
+.avatar-uploader .ant-upload-list {
+  text-align: center;
+}

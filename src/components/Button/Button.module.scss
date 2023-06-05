@@ -1,0 +1,227 @@
+@import "/src/styles/variables/common";
+@import "/src/styles/mixins/breakpoints";
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  appearance: none;
+  background: none;
+  line-height: 100%;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  border: none;
+  color: $color-light;
+  cursor: pointer;
+  transition: $transition-opacity;
+  white-space: nowrap;
+
+  font-family: $font-primary;
+
+  &:hover {
+    opacity: 0.75;
+  }
+
+  &:disabled {
+    color: #676c81;
+    cursor: not-allowed;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+// sizes
+
+.buttonPrimary {
+  padding: 0 33px;
+  border-radius: 22.5px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 11.5px;
+  height: 50px;
+}
+
+.buttonCompact {
+  padding: 0 20px;
+  font-size: 14px;
+  font-weight: normal;
+  height: 38px;
+  letter-spacing: 0.33px;
+  border-radius: 19px;
+  line-height: 10.5px;
+}
+
+.buttonSmall {
+  padding: 0 11px;
+  font-size: 12px;
+  font-weight: normal;
+  height: 30px;
+  border-radius: 7.5px;
+  line-height: 10.5px;
+}
+
+// styles
+
+.buttonDark {
+  color: $color-light;
+  background: $bg-dark;
+  border: 1px solid $color-border;
+
+  transition: $transition-all;
+
+  &:hover {
+    opacity: 0.85;
+    border-color: $color-medium;
+  }
+
+  &:focus {
+    box-shadow: 0px 0px 4px $color-dark;
+    text-shadow: none;
+  }
+}
+
+.buttonBlue {
+  background: #0084fc;
+}
+
+.buttonLight {
+  color: $color-blue;
+  background: $color-light;
+
+  transition: $transition-opacity;
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  &:focus {
+    box-shadow: 0px 0px 4px $color-dark;
+    text-shadow: none;
+  }
+}
+
+.buttonGray {
+  color: $color-light;
+  background: $bg-light;
+}
+
+.buttonGreen {
+  background-image: linear-gradient(to top, #14b371, #40cd93);
+  color: #ffffff;
+
+  transition: $transition-opacity;
+
+  &:hover {
+    opacity: 0.9;
+    color: #ffffff;
+  }
+
+  &:focus {
+    box-shadow: 0px 0px 4px $color-green;
+    text-shadow: none;
+  }
+}
+
+.buttonDisabled {
+    background: $bg-light;
+}
+
+// MISC
+
+.buttonOutline {
+  border-style: solid;
+  border-width: 1px;
+  border-color: currentColor;
+  background: none;
+
+  &:focus {
+    box-shadow: 0px 0px 2px rgba($color-dark, 0.25);
+    text-shadow: none;
+  }
+
+  &.buttonLight {
+    color: $color-light;
+  }
+
+  &.buttonGreen {
+    color: $color-green;
+  }
+
+  &.buttonGray {
+    color: $color-light;
+  }
+
+
+  &.buttonDark {
+    color: $color-dark;
+  }
+
+  &:hover {
+    opacity: 0.75;
+  }
+}
+
+
+.icon {
+  display: inline-block;
+  line-height: 0;
+  min-width: 12px;
+  min-height: 12px;
+  margin-left: 7px;
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  svg, path {
+    fill: currentColor;
+    border: currentColor;
+  }
+}
+
+.iconAlignStart {
+  margin-left: 0;
+  margin-right: 7px;
+}
+
+.spinner {
+  width: 20px;
+  animation: rotate 0.7s linear infinite, appear 0.15s ease-in forwards;
+  opacity: 0;
+
+  .buttonCompact & {
+    width: 15px;
+  }
+
+  .buttonSmall & {
+    width: 10px;
+  }
+
+}
+
+@keyframes appear {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .buttonPrimary {
+    padding: 0 13px;
+  }
+}

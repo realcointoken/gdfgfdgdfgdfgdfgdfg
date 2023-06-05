@@ -1,0 +1,10 @@
+@import "/src/styles/mixins/breakpoints";
+@import "/src/styles/variables/common";
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 28px;
+  min-width: 0;
+  justify-content: space-between;
+}

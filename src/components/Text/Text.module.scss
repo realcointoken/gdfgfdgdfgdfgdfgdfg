@@ -1,0 +1,34 @@
+@import "/src/styles/variables/common";
+@import "/src/styles/mixins/breakpoints";
+
+.text {
+  font-family: $font-primary;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+  white-space: pre-line;
+
+  margin: 0;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .text {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1365px) {
+}

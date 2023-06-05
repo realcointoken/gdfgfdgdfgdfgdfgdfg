@@ -1,0 +1,102 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a {
+  color: $color-light;
+}
+
+body {
+  background: $bg-dark;
+  margin: 0;
+  padding: 0;
+  // overflow-x: hidden;
+}
+
+h1,
+.h1 {
+  line-height: 1.2;
+  font-size: 2em;
+}
+
+h2,
+.h2 {
+  line-height: 1.2;
+  font-size: 1.5em;
+}
+
+small {
+  font-size: 80%;
+}
+
+input[type='text'],
+textarea,
+button {
+  outline: none;
+}
+
+input[type='text']:focus,
+textarea:focus,
+button:focus,
+a:focus {
+  outline: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  background-color: $color-grey !important;
+}
+
+.pseudoInput {
+  color: $color-light;
+}
+
+.color-red {
+  color: $color-red;
+}
+
+.color-yellow {
+  color: $color-yellow;
+}
+
+@-webkit-keyframes autofill {
+  to {
+    color: inherit;
+    background: transparent;
+  }
+}
+
+:root {
+  .textAlignCenter {
+    text-align: center;
+  }
+
+  .inputPlaceholder {
+    &Red {
+      input::placeholder {
+        color: $color-red;
+      }
+    }
+
+    &Yellow {
+      input::placeholder {
+        color: $color-yellow;
+      }
+    }
+  }
+}

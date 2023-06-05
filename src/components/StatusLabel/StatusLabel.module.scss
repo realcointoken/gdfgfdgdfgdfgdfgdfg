@@ -1,0 +1,85 @@
+@import "/src/styles/variables/common";
+@import "/src/styles/mixins/breakpoints";
+@import "/src/styles/animations";
+
+.container {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #d2f8df;
+  height: 23px;
+  min-width: 67px;
+  padding: 0 7px;
+  border-radius: 11.8px;
+
+  font-family: $font-primary;
+  font-size: 12px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-green;
+
+  &:before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: currentColor;
+    margin-right: 3px;
+    border-radius: 50%;
+  }
+
+  &.loading {
+    background: $bg-light;
+    color: transparent;
+
+    animation: $opacity-pulse;
+
+    &:before {
+      background: $bg-medium;
+    }
+  }
+}
+
+.containerLive {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #e25c5c57;
+  height: 23px;
+  min-width: 67px;
+  padding: 0 7px;
+  border-radius: 11.8px;
+
+  font-family: $font-primary;
+  font-size: 12px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-red;
+
+  &:before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: currentColor;
+    margin-right: 3px;
+    border-radius: 50%;
+  }
+
+  &.loading {
+    background: $bg-light;
+    color: transparent;
+
+    animation: $opacity-pulse;
+
+    &:before {
+      background: $bg-medium;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+// @import "/src/styles/variables/common";
+// @import "/src/styles/mixins/breakpoints";
+// @import "/src/styles/animations";
+
+// .container {
+//   height: 6.5px;
+//   background: #23283b;
+//   border-radius: 3.3px;
+//   flex-grow: 10;
+
+// }
+
+// .filler {
+//   border-radius: 3.3px;
+//   height: 100%;
+//   transform-origin: left;
+//   background: linear-gradient(to right, #c6a4fb, #80c5ff, #a5decb);
+//   transition: $transition-all;
+//   transform: scaleX(0);
+
+//   .loading & {
+//     color: transparent;
+//     background: $bg-light;
+//     border-radius: 10px;
+//     animation: $opacity-pulse;
+//   }
+// }
+
+@import '/src/styles/variables/common';
+@import '/src/styles/mixins/breakpoints';
+@import '/src/styles/animations';
+
+.container {
+  height: 6.5px;
+  background: #23283b;
+  border-radius: 50px;
+}
+
+.filler {
+  border-radius: 50px;
+  height: 100%;
+  transform-origin: left;
+  background: #0079fc;
+  transition: $transition-all;
+  transform: scaleX(0);
+}

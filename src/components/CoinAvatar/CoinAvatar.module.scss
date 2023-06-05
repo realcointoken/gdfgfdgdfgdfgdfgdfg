@@ -1,0 +1,28 @@
+.container {
+  position: relative;
+  display: block;
+  width: 49px;
+  height: 49px;
+  border-radius: 50%;
+  background: #343D56 no-repeat center / cover;
+}
+
+.icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #2a2c3b;
+  border-radius: 50%;
+  box-shadow: -7.9px 5.3px 53.2px 13.3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #343645;
+}
+
+.iconImage {
+  max-height: 10px;
+  max-width: 8px;
+}

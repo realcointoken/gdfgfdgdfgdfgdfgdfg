@@ -1,0 +1,97 @@
+@import '/src/styles/variables/common';
+@import '/src/styles/mixins/breakpoints';
+.heading {
+  margin-top:60px;
+  display: block;
+  font-family: $font-secondary;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: -0.88px;
+  text-align: center;
+  color: $color-light;
+  margin-bottom: 10px;
+}
+
+.kyc_sumitted {
+  display: block;
+  font-family: $font-secondary;
+  line-height: 1.14;
+  letter-spacing: -0.88px;
+  color: $color-light;
+
+  right: 50%;
+  bottom: 50%;
+  transform: translate(50%, 50%);
+  position: absolute;
+}
+
+.form {
+  width: 50%;
+  padding: 30px;
+  margin: auto;
+  margin: 10px auto;
+  background-image: linear-gradient(to top, #101527, #060d20);
+  border-radius: 20px;
+}
+.form_small {
+  width: 80%;
+  padding: 30px;
+  margin: 10px auto;
+  background-image: linear-gradient(to top, #101527, #060d20);
+  border-radius: 20px;
+}
+.btnContainer {
+  margin: auto;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.Sidebar {
+  height: 550px;
+  width: 250px;
+  background-color: white;
+}
+.swapMain {
+  display: flex;
+}
+
+.form-control:focus {
+  box-shadow: unset !important;
+}
+.input {
+  background-color: #0f1528;
+  border-radius: 11px;
+  width: 100%;
+
+  margin: 0px 15px;
+  border: 0.5px solid #1d243b;
+}
+
+.labelWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.label {
+  font-family: $font-primary;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-darkest;
+  margin-bottom: 10px;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  position: relative;
+  right: 15px;
+  bottom: 20px;
+}

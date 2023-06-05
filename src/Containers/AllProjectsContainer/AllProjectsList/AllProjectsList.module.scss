@@ -1,0 +1,199 @@
+@import "/src/styles/variables/common";
+@import "/src/styles/mixins/breakpoints";
+@import "/src/styles/animations";
+
+.head {
+  padding: 0 29px 20px;
+  box-sizing: border-box;
+  min-width: 0;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 20px;
+  list-style: none;
+  margin: 0;
+  border-bottom: 1px solid $color-light-darker;
+
+  @include breakpoint("sm-max") {
+    padding: 0 20px 20px;
+    grid-gap: 0;
+    grid-template-columns: 70% 30%;
+  }
+}
+
+.heading {
+  font-family: $font-primary;
+  font-size: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-medium;
+}
+
+.alignCenter {
+  text-align: center;
+}
+
+  #none {
+    display: block;
+  }
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.listItem {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 20px;
+  min-width: 0;
+  box-sizing: border-box;
+  padding: 16px 29px;
+  border-bottom: 1px solid $color-light-darker;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 0 15px rgba($bg-light,0.5);
+  }
+
+  @include breakpoint("sm-max") {
+    padding: 16px 20px;
+    grid-gap: 10px;
+    grid-template-columns: 45% 25% 30%;
+  }
+}
+
+.listItemCell {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+
+  font-family: $font-primary;
+  font-size: 15px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fefefe;
+
+  @include breakpoint("sm-max") {
+    font-size: 13px;
+  }
+}
+
+.textOverflowContainer {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+  .loading & {
+    color: transparent;
+    background: $bg-light;
+    border-radius: 6px;
+    width: 100px;
+    height: 15px;
+
+    animation: $opacity-pulse;
+  }
+}
+
+.coinPicture {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+
+  @include breakpoint("sm-max") {
+    width: 34px;
+    height: 34px;
+  }
+}
+
+.symbol {
+  font-size: 14px;
+  font-weight: normal;
+  color: $color-medium;
+
+  @include breakpoint("sm-max") {
+
+    font-size: 13px;
+  }
+}
+
+.blockchainIconContainer {
+  width: 20px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  .loading & {
+    display: none;
+  }
+}
+
+.blockchainIcon {
+  max-height: 14px;
+  max-width: 12px;
+}
+
+.percentValue {
+  font-size: 16px;
+  min-width: 46px;
+  flex-shrink: 0;
+
+  .loading & {
+    height: 20px;
+    min-width: 20px;
+    width: 20px;
+    border-radius: 10px;
+    background: $bg-light;
+    color: transparent;
+
+    animation: $opacity-pulse;
+  }
+}
+
+.progress {
+  margin-left: 8px;
+  max-width: 122.5px;
+}
+
+.labelComplete {
+  background: #86c5ff;
+  color: #0084fc;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25.5px;
+}
+
+@media only screen and (max-width: 767px) {
+
+  #none {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .head {
+    padding: 0 10px 20px;
+  }
+
+  .listItem {
+    grid-gap: 15px;
+    padding: 16px 10px;
+  }
+}

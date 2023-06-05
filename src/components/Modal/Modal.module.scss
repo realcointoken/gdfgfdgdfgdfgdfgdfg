@@ -1,0 +1,47 @@
+@import "/src/styles/variables/common";
+@import "/src/styles/mixins/breakpoints";
+@import "/src/styles/animations";
+
+.container {
+  .head {
+    background: $bg-light;
+    min-height: 45px;
+    padding: 17px 60px 17px 23px;
+  }
+
+  .title {
+    font-family: $font-primary;
+    font-size: 15px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: $color-light;
+    margin: 0;
+  }
+
+  .body {
+    padding: 26px 23px 41px;
+  }
+
+  :global {
+    .ant-modal-content {
+      border-radius: 15px;
+      background: $bg-dark;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .ant-modal-body {
+      padding: 0;
+    }
+
+    .ant-modal-close-x {
+      margin-right: 7px;
+      margin-top: 5px;
+    }
+  }
+
+}

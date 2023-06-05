@@ -1,0 +1,135 @@
+@import "/src/styles/mixins/breakpoints";
+@import "/src/styles/variables/common";
+
+.container {
+  border: 1px solid $color-border;
+  border-radius: 15px;
+  padding: 19px 21px 16px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+
+  font-family: $font-primary;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-medium;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 13px;
+}
+
+.bottomRight {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 10px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  background: $bg-light no-repeat center / cover;
+  border-radius: 50%;
+  margin-right: 7.5px;
+}
+
+.sign {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+
+  font-family: $font-primary;
+  font-size: 18px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: right;
+  color: $color-light;
+}
+
+
+.input {
+  display: block;
+  width: 120px;
+  min-width: 0;
+  border: none;
+
+  font-family: $font-primary;
+  font-size: 18px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+  //background-color: transparent !important;
+
+  &::placeholder {
+    color: $color-light;
+  }
+}
+
+
+.container {
+  :global {
+    .ant-input-number-disabled {
+      color: $color-medium;
+      background-color: transparent;
+    }
+
+
+    .ant-input-number-input {
+      padding: 0 30px 0 0;
+      height: auto;
+    }
+
+
+    .ant-input-number-handler {
+      padding: 0 5px;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .ant-input-number-handler-wrap {
+      width: 32px;
+      background: none;
+    }
+
+    .ant-input-number-handler-up, .ant-input-number-handler-down {
+      color: $color-medium;
+    }
+
+    .ant-input-number-handler-up-inner, .ant-input-number-handler-down-inner {
+      right: 10px;
+      color: $color-medium;
+    }
+
+    .ant-input-number-handler:active {
+      background: none;
+    }
+
+
+    .ant-input-number-handler:hover {
+      .ant-input-number-handler-up-inner, .ant-input-number-handler-down-inner {
+        color: $color-blue;
+        background: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+@import "/src/styles/mixins/breakpoints";
+
+.container {
+  padding-top: 20px;
+}
+
+.card {
+  margin-top: 12px;
+
+  @include breakpoint("xl-min") {
+    margin-top: 20px;
+  }
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: minmax(490px, 680px) minmax(300px, 400px);
+  align-items: start;
+  grid-gap: 29px;
+  margin-top: 18px;
+
+  @media screen and (max-width: 1124px){
+    grid-template-columns: 1fr;
+  }
+
+  @include breakpoint("xl-min") {
+    grid-template-columns: minmax(490px, 800px) minmax(350px, auto);
+    margin-top: 22px;
+  }
+}
+
+.formWrapper {
+  position: relative;
+  height: 100%;
+}
+
+//.form {
+//  position: sticky;
+//  top: 90px;
+//}

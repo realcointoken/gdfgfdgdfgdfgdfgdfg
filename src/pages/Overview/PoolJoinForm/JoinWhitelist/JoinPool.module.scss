@@ -1,0 +1,124 @@
+@import "/src/styles/variables/common";
+@import "/src/styles/mixins/breakpoints";
+@import "/src/styles/animations";
+
+.container {
+  padding-top: 10px;
+}
+
+.heading {
+  font-family: $font-primary;
+  font-size: 18px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-light;
+  margin: 0;
+}
+
+.countDown {
+  list-style: none;
+  padding: 0;
+  margin: 26px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.countDownLabel {
+  font-family: $font-primary;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: $color-medium;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.countDownValue {
+  font-family: $font-primary;
+  font-size: 36px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: center;
+  color: $color-light;
+}
+
+.progress {
+  margin-top: 10px;
+}
+
+.data {
+  margin: 21px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.dataRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-family: $font-primary;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-light;
+
+  &:not(:first-child) {
+    margin-top: 15px;
+  }
+}
+
+.dataLabel {
+  font-family: $font-primary;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-medium;
+  margin-top: 9px;
+}
+.dataValue {
+  font-family: $font-primary;
+  font-size: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: right;
+  color: $color-light;
+
+}
+
+.button {
+  width: 100%;
+  margin-top: 21px;
+
+  .loading & {
+    color: transparent;
+    background: $bg-light;
+    animation: $opacity-pulse;
+  }
+}
+
+.status {
+  margin-top: 23px;
+}

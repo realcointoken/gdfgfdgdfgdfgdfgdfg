@@ -1,0 +1,42 @@
+@import "/src/styles/variables/common";
+@import "/src/styles/mixins/breakpoints";
+
+.uploadContainer {
+    background-color: #0f1528;
+    border: solid 1px #1d243b;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .info {
+        font-family: $font-primary;
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 2.5;
+        text-align: center;
+        color: #8e94aa;
+    }
+
+    .errorText {
+        font-family: $font-primary;
+        font-size: 12px;
+        font-weight: normal;
+        line-height: 2.5;
+        text-align: center;
+        color: #e66060;
+        cursor: pointer;
+    }
+
+    .errorBtn {
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+
+        img {
+            width: 52px;
+        }
+    }
+}

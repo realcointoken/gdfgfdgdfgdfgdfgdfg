@@ -1,0 +1,62 @@
+@import '/src/styles/variables/common';
+@import '/src/styles/mixins/breakpoints';
+
+.heading {
+  display: inline-block;
+  font-family: $font-primary;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+
+  margin-bottom: 10px;
+}
+
+.links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.linksItem {
+  &:not(:first-child) {
+    margin-top: 5px;
+
+    @include breakpoint('sm-max') {
+      margin-top: 16px;
+    }
+  }
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  font-family: $font-primary;
+  font-size: 14px;
+  color: $color-light;
+  line-height: 100%;
+  text-decoration: none;
+
+  transition: $transition-all;
+
+  &:hover {
+    color: $color-light;
+    opacity: 0.85;
+  }
+
+  @include breakpoint('sm-max') {
+    font-size: 13.3px;
+  }
+}
+
+.linkImage {
+  margin-right: 7px;
+}
+
+@media only screen and (max-width: 767px) {
+  .links {
+    margin-bottom: 30px;
+  }
+}

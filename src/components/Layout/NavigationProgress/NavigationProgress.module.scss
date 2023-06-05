@@ -1,0 +1,29 @@
+@import "/src/styles/variables/common";
+@import "/src/styles/mixins/breakpoints";
+@import "/src/styles/animations";
+
+.container {
+  height: 4px;
+  width: 100%;
+  background: #23283b;
+  border-radius: 3.3px;
+  transform: scaleY(0);
+  transition: all 0.15s 0.15s ease-in;
+  opacity: 0;
+
+  &.loading {
+    transition: all 0.15s ease-in;
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
+.filler {
+  height: 100%;
+  transform-origin: left;
+  background: $color-blue;
+  transition: transform 0.15s ease-in;
+  transform: scaleX(0);
+  color: transparent;
+  animation: $opacity-pulse;
+}

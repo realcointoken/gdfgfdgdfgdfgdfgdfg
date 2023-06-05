@@ -1,0 +1,24 @@
+@import "/src/styles/mixins/breakpoints";
+@import "/src/styles/variables/common";
+
+.container {
+  border-radius: 7.5px;
+  border: 0.5px solid $color-grey-border;
+  padding: 10px 15px;
+
+
+  font-family: $font-primary;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 12px;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-darkest;
+  background-color: $color-grey;
+
+  &::placeholder {
+    color: $color-thin-light;
+  }
+}

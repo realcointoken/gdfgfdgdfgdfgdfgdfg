@@ -1,0 +1,41 @@
+@import "/src/styles/variables/common";
+@import "/src/styles/mixins/breakpoints";
+@import "/src/styles/animations";
+
+.container {
+  display: flex;
+  align-items: center;
+  min-height: 47px;
+  border-radius: 23.5px;
+  border: 1px solid $color-border;
+  padding: 6.5px;
+}
+
+.image {
+  width: 34px;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  margin-left: 12px;
+
+  font-family: $font-primary;
+  font-size: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-medium;
+}
+
+.address {
+  font-size: 11px;
+  font-weight: normal;
+}
+
+.text {
+  margin-top: 3px;
+}

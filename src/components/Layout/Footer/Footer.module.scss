@@ -1,0 +1,39 @@
+@import '/src/styles/variables/common';
+@import '/src/styles/mixins/breakpoints';
+
+.container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.grid {
+  display: flex;
+}
+
+.logo {
+  width: 70px;
+}
+
+.copy {
+  display: block;
+  margin-top: 11.5px;
+
+  font-family: $font-primary;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-light;
+}
+
+@media only screen and (max-width: 767px) {
+  .brand {
+    margin-bottom: 30px;
+
+    .copy {
+      margin-top: 0;
+    }
+  }
+}

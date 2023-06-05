@@ -1,0 +1,36 @@
+[
+  {
+    "id":  "12331",
+    "name": "Oddz Finance",
+    "picture": "/img/pools/1.png",
+    "blockchain": "Ethereum",
+    "fill_date": "2021-08-12",
+    "total_raise_fiat": 150000,
+    "allocation_min": 0,
+    "allocation_max": null,
+    "access": "Private"
+  },
+  {
+    "id": "123322",
+    "name": "Oddz Finance",
+    "picture": "/img/pools/2.png",
+    "blockchain": "Ethereum",
+    "fill_date": "2021-08-12",
+    "total_raise_fiat": 150000,
+    "allocation_min": 0,
+    "allocation_max": null,
+    "access": "Private",
+    "is_popular": true
+  },
+  {
+    "id": "123323",
+    "name": "Oddz Finance",
+    "picture": "/img/pools/3.png",
+    "blockchain": "Ethereum",
+    "fill_date": "2021-08-12",
+    "total_raise_fiat": 150000,
+    "allocation_min": 0,
+    "allocation_max": null,
+    "access": "Private"
+  }
+]

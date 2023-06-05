@@ -1,0 +1,1 @@
+export const APPROVE_TOKEN_DATA = 'APPROVE_TOKEN_DATA'

@@ -1,0 +1,8 @@
+.gradient {
+  display: inline-block;
+  background: linear-gradient(to right, #c3a5fb, #84c0ff, #a3ddce);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  word-spacing: 5px;
+}

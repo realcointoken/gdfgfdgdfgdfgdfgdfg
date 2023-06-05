@@ -1,0 +1,17 @@
+.container {
+}
+
+.text {
+  margin: 15px 0 0;
+}
+
+.children {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  .text + &, .title + & {
+    margin-left: 25px;
+  }
+}

@@ -1,0 +1,230 @@
+* {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.colFlex {
+  display: flex;
+  flex-direction: column;
+}
+
+.proj_title {
+  font-style: normal;
+  font-size: 24px;
+  line-height: 29px;
+  /* identical to box height */
+
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+
+  /* Main/blue */
+
+  color: #0079fc;
+}
+
+.button_text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+.leftside {
+  margin-top: 31px;
+  background: #000000;
+  border-radius: 16px;
+}
+
+.logo_div {
+  border-radius: 16px 16px 0px 0px;
+  height: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // background: rgba(0, 0, 0, 0.42);
+}
+
+.values_div {
+  padding: 36px;
+}
+
+.heading {
+  font-style: normal;
+  // font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.sub_heading {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  color: #90949e;
+}
+
+.progress_value {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  margin-top: 4px;
+
+  color: #ffffff;
+}
+
+.project_overview {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 160%;
+  /* or 38px */
+
+  color: #ffffff;
+}
+
+.project_overview_detail {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 158.5%;
+  padding-right: 120px;
+  /* or 24px */
+
+  color: #ffffff;
+}
+
+.pooldetail {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 160%;
+  /* identical to box height, or 24px */
+
+  color: rgba(255, 255, 255, 0.48);
+}
+
+.poolinformation {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 160%;
+  /* identical to box height, or 29px */
+
+  color: #ffffff;
+}
+.colname {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 160%;
+  /* identical to box height, or 24px */
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.colvalue {
+  font-style: normal;
+  // font-weight: bold;
+  font-size: 15px;
+  line-height: 160%;
+  padding-left: 15px;
+  word-break: break-word;
+  /* identical to box height, or 24px */
+
+  color: #ffffff;
+}
+
+.tvlbox {
+  background: #262c40;
+  /* light_grey */
+  border: 1px solid #3a435a;
+  box-sizing: border-box;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15.5px;
+  margin-bottom: 20px;
+  width: 60%;
+}
+.tvltext {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  margin: 0px;
+  color: #ffffff;
+}
+
+.lotterybtntext {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 17px;
+  /* identical to box height */
+  color: #ffffff;
+  border-radius: 34px;
+  padding: 10px 20px;
+  border: 1px solid #3a435a;
+  background-color: transparent;
+}
+
+.rightbox {
+  background: #171a29;
+  border-radius: 16px;
+  padding: 19px 10px;
+}
+
+.joinlottrypool {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+  color: #ffffff;
+}
+
+.launchx {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+  /* identical to box height */
+
+  color: #ffffff;
+  margin: 0px;
+}
+
+.btnPurchase {
+  background: #0079fc;
+  border-radius: 27px;
+  font-family: Montserrat;
+  font-style: normal;
+  // font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 10px 20px;
+  color: #ffffff;
+  border: none;
+}
+.customTableBackground * {
+  background-color: #171a29 !important;
+}
+
+.textDecorationNone {
+  text-decoration: none;
+}

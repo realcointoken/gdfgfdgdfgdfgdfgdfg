@@ -1,0 +1,48 @@
+@import "/src/styles/mixins/breakpoints";
+@import "/src/styles/variables/common";
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.label, .value {
+  font-family: $font-secondary;
+  font-size: 15px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  //color: $color-darkest;
+}
+
+.label {
+  font-weight: 500;
+}
+
+.value {
+  font-weight: normal;
+}
+
+.input {
+  margin: 5px 0 0;
+
+  :global {
+    .ant-slider-rail {
+      height: 5px;
+      //background-color: $color-grey;
+    }
+
+    .ant-slider-track {
+      background-image: linear-gradient(to right, #3fcc91, #15b472);
+    }
+
+    .ant-slider-handle {
+      width: 16px;
+      height: 16px;
+      margin-top: -6px;
+      border: solid 5px #3fcc91;
+    }
+  }
+}

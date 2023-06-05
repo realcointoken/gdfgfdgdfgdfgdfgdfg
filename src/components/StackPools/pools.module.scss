@@ -1,0 +1,126 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.main {
+  background-color: #050d1f87;
+  border-radius: 10px;
+  padding: 20px 10px;
+  margin: 0px 2px;
+  position: relative;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.project_name {
+  font-style: normal;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 8px;
+  width: 70%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.currency {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 17px;
+  /* identical to box height */
+  color: #90949e;
+  width: 70%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.stacking_time {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 17px;
+  /* identical to box height */
+
+  color: #f97474;
+
+  border: 1px solid #ffffff66;
+  border-radius: 16px;
+  padding: 2px 4px;
+  text-align: center;
+}
+
+.price_title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 17px;
+  /* identical to box height */
+
+  color: rgba(255, 255, 255, 0.46);
+}
+
+.price_value {
+  font-style: normal;
+  font-size: 20px;
+  line-height: 29px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+.popular {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 17px;
+  color: #0079fc;
+}
+
+.heading {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #ffffff;
+}
+
+.currency {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  color: #90949e;
+}
+
+.stacking_time {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  color: #f97474;
+
+  border: 1px solid #ffffff66;
+  border-radius: 16px;
+  padding: 4px 8px;
+  text-align: center;
+}
+
+.price_title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 8px;
+  /* identical to box height */
+
+  color: rgba(255, 255, 255, 0.46);
+}

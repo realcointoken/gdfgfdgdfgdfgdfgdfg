@@ -1,0 +1,28 @@
+@import "/src/styles/mixins/breakpoints";
+@import "/src/styles/variables/common";
+
+.container {
+  font-family: $font-primary;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-red;
+
+
+  transition: all 0.15s linear;
+  margin-top: 0;
+  opacity: 0;
+  visibility: hidden;
+  max-height: 0;
+}
+
+.containerVisible {
+  max-height: 100px;
+  opacity: 1;
+  margin-top: 5px;
+  visibility: visible;
+}

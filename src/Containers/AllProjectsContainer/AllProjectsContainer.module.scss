@@ -1,0 +1,40 @@
+@import '/src/styles/variables/common';
+@import '/src/styles/mixins/breakpoints';
+
+.container {
+  padding-top: 40px;
+}
+
+.scrollContainer {
+  @include breakpoint('sm-max') {
+    overflow-x: auto;
+  }
+}
+
+.scroll {
+  @include breakpoint('sm-max') {
+    min-width: 350px;
+  }
+}
+
+.panel {
+  border-radius: 20px;
+  background: $bg-medium;
+  padding: 2px 0 32px;
+}
+
+.head {
+  padding: 0 29px;
+
+  @include breakpoint('md-max') {
+    padding: 0 10px;
+  }
+
+  @include breakpoint('sm-max') {
+    padding: 0 20px;
+  }
+}
+
+.list {
+  margin-top: 28px;
+}

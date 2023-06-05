@@ -1,0 +1,41 @@
+@import "/src/styles/animations";
+
+.container {
+  position: fixed;
+  top: 0;
+  left: auto;
+  right: auto;
+  //width: 100vw;
+  //overflow: hidden;
+  height: 100%;
+  z-index: -1;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  left:0;
+}
+
+@mixin circle($width: 100, $top: 0, $left: 0) {
+  position: absolute;
+  top: $top * 1px;
+  left: $left * 1px;
+  width: $width * 1px;
+  animation-delay: random(5) * 1s;
+}
+
+.circle1 {
+  @include circle(206, 69.5, 120);
+  @include animateFloatSquare(circle1);
+}
+
+.circle2 {
+  @include circle(919, 99, 380);
+  @include animateFloatSquare(circle2, 60px, 15s);
+}
+
+.circle3 {
+  @include circle(530, 526.5, -195);
+  @include animateFloatSquare(circle3, 40px);
+}

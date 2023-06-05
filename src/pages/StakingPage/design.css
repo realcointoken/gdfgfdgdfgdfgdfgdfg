@@ -1,0 +1,9 @@
+* {
+  font-family: Montserrat;
+}
+
+.cell {
+  vertical-align: middle;
+  display: table-cell;
+  padding-right: 15px;
+}

@@ -1,0 +1,71 @@
+@import "/src/styles/variables/common";
+@import "/src/styles/mixins/breakpoints";
+@import "/src/styles/animations";
+
+.container {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+}
+
+.item {
+  font-family: $font-primary;
+  font-size: 11px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-light;
+  text-transform: capitalize;
+
+  @include breakpoint("xl-min") {
+    font-size: 14px;
+  }
+
+  &:not(:first-child) {
+    margin-left: 8px;
+
+    @include breakpoint("xl-min") {
+      margin-left: 12px;
+    }
+  }
+
+  .loading & {
+    background: $bg-light;
+    color: transparent;
+    border-radius: 10px;
+    min-width: 75px;
+    height: 12px;
+
+    animation: $opacity-pulse;
+  }
+}
+
+.link {
+  color: $color-medium;
+  transition: $transition-all;
+
+  &:hover {
+    color: $color-medium;
+    opacity: 0.85;
+  }
+}
+
+.arrow {
+  height: 10.5px;
+  margin-left: 8px;
+  color: $color-medium;
+
+  @include breakpoint("xl-min") {
+    margin-left: 12px;
+  }
+
+  .loading & {
+    display: none;
+  }
+}
